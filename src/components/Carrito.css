@@ -1,0 +1,124 @@
+/* Estilos para el contenedor del carrito */
+.contenedor-carrito {
+  position: fixed; /* Fijar posición */
+  top: 0; /* Partir desde la parte superior */
+  right: 0; /* Partir desde la parte derecha */
+  width: 400px; /* Ancho del carrito */
+  height: 100%; /* Ocupar toda la altura */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscurecido */
+  display: flex; /* Mostrar como flexbox */
+  justify-content: flex-end; /* Centrar horizontalmente a la derecha */
+  align-items: center; /* Centrar verticalmente */
+  animation: slideInFromRight 0.5s ease; /* Animación de entrada */
+  z-index: 999; /* Asegurar que esté por encima de otros elementos */
+}
+
+/* Animación de entrada */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Animación de salida desplazando hacia la derecha */
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+/* Contenido del carrito */
+.carrito {
+  width: 80%; /* Ancho del contenido */
+  height: 80%; /* Altura del contenido */
+  background-color: #f9f9f9; /* Color de fondo del carrito */
+  padding: 30px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  display: flex; /* Mostrar como flexbox */
+  flex-direction: column; /* Apilar elementos verticalmente */
+  align-items: center; /* Centrar elementos horizontalmente */
+  margin-right: 10px;
+  overflow-x: auto; /* Barra de desplazamiento horizontal si el contenido excede el ancho */
+}
+
+
+/* Otros estilos para el contenido del carrito */
+.carrito h3 {
+  margin-top: 0; /* Eliminar margen superior */
+  margin-bottom: 20px; /* Margen inferior */
+  font-size: 24px; /* Tamaño de fuente */
+  color: #333; /* Color de texto */
+}
+
+.carrito img {
+  width: 200px; /* Ancho de la imagen */
+  height: 200px; /* Altura de la imagen */
+  object-fit: cover; /* Ajustar la imagen para llenar el contenedor */
+  border-radius: 50%; /* Hacer la imagen circular */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+.carrito label {
+  font-size: 18px; /* Tamaño de fuente */
+  color: #555; /* Color de texto */
+  margin-bottom: 5px; /* Margen inferior */
+}
+
+.carrito input {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Relleno */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-bottom: 20px; /* Margen inferior */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: border-color 0.3s; /* Transición suave del color del borde */
+}
+
+.carrito input:focus {
+  border-color: #007bff; /* Cambio de color del borde al enfocar */
+}
+
+.carrito button {
+  padding: 12px 24px; /* Relleno del botón */
+  font-size: 16px; /* Tamaño de fuente */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor al pasar */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  margin-top: 10px; /* Margen superior */
+  transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.carrito button:hover {
+  background-color: #0056b3; /* Cambio de color del botón al pasar */
+}
+
+@keyframes bounceOut {
+  20% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.bounceOut {
+  animation: slideOutToRight 0.5s forwards;
+}
+.producto {
+  border-bottom: 1px solid #ccc; /* Línea de separación entre productos */
+  padding-bottom: 20px; /* Espaciado inferior entre productos */
+  margin-bottom: 20px; /* Margen inferior entre productos */
+}

@@ -1,0 +1,140 @@
+.pedidos-container {
+  position: absolute; /* Establece la posición absoluta para el contenedor de pedidos */
+  top: calc(70px + 20px); /* Coloca el contenedor de pedidos debajo del texto de bienvenida */
+  left: 0; /* Alinea el contenedor de pedidos a la izquierda */
+  width: 100%; /* Ocupa todo el ancho del contenedor principal */
+  padding-top: 20px; /* Espaciado superior */
+}
+
+.pedidos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Distribución automática de columnas */
+  gap: 20px; /* Espaciado entre pedidos */
+}
+
+.pedido {
+  border: 1px solid #ddd; /* Borde */
+  padding: 20px; /* Espaciado interno */
+  animation: zoomIn 0.3s ease; /* Animación de zoom in */
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9); /* Escala inicial */
+  }
+  to {
+    transform: scale(1); /* Escala final */
+  }
+}
+
+.pedido-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.pedido-body {
+  margin-top: 10px;
+}
+
+.pedido-footer {
+  margin-top: 10px;
+}
+
+/* Estilo para botones */
+button {
+  padding: 5px 10px; /* Espaciado interno */
+  background-color: #50b24d; /* Color de fondo */
+  color: white; /* Color de texto */
+  border: 1px solid #ddd; /* Borde */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  border-radius: 4px; /* Bordes redondeados */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.contenedor-actualizacion {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: mostrar 0.5s ease; /* Animación de entrada */
+}
+
+
+.progress-bar {
+  text-align: center;
+  padding: 20px;
+}
+
+.actualizacion-zoom-in {
+  animation: zoomIn 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto; /* Agregar desplazamiento vertical */
+}
+
+.productos-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.productos-tabla th,
+.productos-tabla td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  color: black; /* Texto negro */
+}
+
+.productos-tabla th {
+  background-color: #f6f6f6;
+  font-weight: bold;
+}
+
+@keyframes mostrar {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animación de salida desplazando hacia la izquierda */
+@keyframes ocultars {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+.abouncea-out {
+  animation: slideOutToLeft 0.5s both;
+}
+

@@ -1,0 +1,68 @@
+.agregar-producto-container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+    position: absolute;
+    margin: 0 auto;
+    animation: zoomIn 0.3s ease forwards; /* Animación de zoom in al aparecer */
+  }
+  
+  .agregar-producto-container.salida {
+    animation: zoomOut 0.3s ease forwards;
+  }
+  
+  .agregar-producto-title {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    animation: typing 3s steps(30, end) forwards;
+  }
+  
+  .agregar-producto-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ecbe08;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #f2b000;
+    transform: scale(1.05);
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+  
