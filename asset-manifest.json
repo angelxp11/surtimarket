@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/surtimarket/static/css/main.0dc4c834.css",
+    "main.js": "/surtimarket/static/js/main.83193754.js",
+    "static/js/453.3970bd2f.chunk.js": "/surtimarket/static/js/453.3970bd2f.chunk.js",
+    "static/media/defaultProfileImage.png": "/surtimarket/static/media/defaultProfileImage.7427dfb12cb689a02d6a.png",
+    "static/media/productos.png": "/surtimarket/static/media/productos.1750f9e5647790964521.png",
+    "static/media/carrito.png": "/surtimarket/static/media/carrito.1028f98370e5d12501b3.png",
+    "static/media/ingresar.png": "/surtimarket/static/media/ingresar.94cffef696c24148501b.png",
+    "static/media/out.png": "/surtimarket/static/media/out.07193465aed29c44ad2b.png",
+    "static/media/logotipo.png": "/surtimarket/static/media/logotipo.e259d1bab63845c90ec2.png",
+    "static/media/pedidos.png": "/surtimarket/static/media/pedidos.b01c45cf5f1ce74dbb7e.png",
+    "index.html": "/surtimarket/index.html",
+    "main.0dc4c834.css.map": "/surtimarket/static/css/main.0dc4c834.css.map",
+    "main.83193754.js.map": "/surtimarket/static/js/main.83193754.js.map",
+    "453.3970bd2f.chunk.js.map": "/surtimarket/static/js/453.3970bd2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dc4c834.css",
+    "static/js/main.83193754.js"
+  ]
+}
